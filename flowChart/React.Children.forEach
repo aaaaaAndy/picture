@@ -1,1 +1,74 @@
-<mxfile host="app.diagrams.net" modified="2022-02-17T03:36:49.819Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" version="14.9.5" etag="BpzruFpACo6PjuxU0e3R" type="github"><diagram id="KDU0jjrFOZ5QKyWTyg-l">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-02-17T03:39:43.711Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" etag="Kd7IPmU38JErECI4Ld1T" version="14.9.5" type="github">
+  <diagram id="KDU0jjrFOZ5QKyWTyg-l" name="Page-1">
+    <mxGraphModel dx="1303" dy="898" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CSw4V1dhIp5PxOYUn1-B-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CSw4V1dhIp5PxOYUn1-B-2" target="CSw4V1dhIp5PxOYUn1-B-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CSw4V1dhIp5PxOYUn1-B-2" value="forEachChildren" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="345" y="190" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CSw4V1dhIp5PxOYUn1-B-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CSw4V1dhIp5PxOYUn1-B-6" target="CSw4V1dhIp5PxOYUn1-B-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CSw4V1dhIp5PxOYUn1-B-6" value="traverseAllChildren" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="300" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CSw4V1dhIp5PxOYUn1-B-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CSw4V1dhIp5PxOYUn1-B-8" target="CSw4V1dhIp5PxOYUn1-B-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CSw4V1dhIp5PxOYUn1-B-8" value="traverseAllChildrenImpl" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="390" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CSw4V1dhIp5PxOYUn1-B-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CSw4V1dhIp5PxOYUn1-B-12" target="CSw4V1dhIp5PxOYUn1-B-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CSw4V1dhIp5PxOYUn1-B-10" value="如果是单节点形式（包括：string、number、REACT_ELEMENT_TYPE、REACT_PORTAL_TYPE）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CSw4V1dhIp5PxOYUn1-B-9">
+          <mxGeometry x="-0.1143" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CSw4V1dhIp5PxOYUn1-B-11" value="如果是数组或者Iterator形式，则遍历递归调用自身" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CSw4V1dhIp5PxOYUn1-B-12" target="CSw4V1dhIp5PxOYUn1-B-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="595" y="530" />
+              <mxPoint x="595" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CSw4V1dhIp5PxOYUn1-B-12" value="判断参数children的类型" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="480" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CSw4V1dhIp5PxOYUn1-B-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CSw4V1dhIp5PxOYUn1-B-14" target="CSw4V1dhIp5PxOYUn1-B-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CSw4V1dhIp5PxOYUn1-B-14" value="调用传入的回调函数forEachSingleChild处理" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="312.5" y="650" width="185" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CSw4V1dhIp5PxOYUn1-B-16" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="570" as="sourcePoint" />
+            <mxPoint x="660" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CSw4V1dhIp5PxOYUn1-B-17" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="570" as="sourcePoint" />
+            <mxPoint x="660" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CSw4V1dhIp5PxOYUn1-B-18" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="570" as="sourcePoint" />
+            <mxPoint x="660" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CSw4V1dhIp5PxOYUn1-B-29" value="调用forEach函数传入的回调函数来对每一个child进行处理" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="312.5" y="740" width="185" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
